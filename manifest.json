@@ -1,0 +1,22 @@
+{
+  "name": "Kalite Kapı - Kapı ve Mutfak Dolabı",
+  "short_name": "Kalite Kapı",
+  "description": "Kocaeli'nde lake kapı, PVC kapı, çelik kapı ve mutfak dolabı üretimi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2a2a2a",
+  "icons": [
+    {
+      "src": "assets/images/logo-resized-image-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/images/logo-resized-image.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+/* Ana sayfa üst görselleri: hepsi kare.
+   Sağdaki 4 görsel eşit (1 birim), soldaki büyük görsel 2 birim. */
+
+.main-banner {
+    padding: 0 !important;
+    border-bottom: 0 !important;
+}
+.main-banner .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+.main-banner .container-fluid > .row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2px !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+.main-banner .container-fluid > .row > .col-lg-6 {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: none !important;
+}
+.main-banner .left-content,
+.main-banner .right-content {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.main-banner .left-content .thumb,
+.main-banner .right-first-image .thumb {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+}
+.main-banner .right-content > .row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+}
+.main-banner .right-content > .row > .col-lg-6 {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: none !important;
+}
+.main-banner .right-first-image {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.main-banner img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+@media (max-width: 480px) {
+    .main-banner .container-fluid > .row,
+    .main-banner .right-content > .row {
+        gap: 1px !important;
+    }
+}
